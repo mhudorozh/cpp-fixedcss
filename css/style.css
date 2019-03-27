@@ -1,0 +1,121 @@
+/* Убрать потом! */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&subset=cyrillic');
+
+
+html {
+    height: 1vh;
+}
+
+body {
+    margin: 0;
+    color: #3d3d3d;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+.content {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+.flex-element-center {
+    align-self: center;
+}
+
+/* Навигация */
+
+.general-nav {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 32px;
+    width: 100%;
+}
+
+.general-nav-right {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.general-nav-right a {
+    display: inline-block;
+    color: black;
+    padding: 8px 24px;
+}
+
+.general-nav-right a:hover {
+    background-color: #ebebeb;
+    color: #3d3d3d
+}
+
+/* Home.vue */
+
+.home-banner {
+    width: 100%;
+    height: 580px;
+    background: url("../img/business.jpg") no-repeat;
+    background-size: 100% auto;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    text-align: center
+}
+
+.home-banner-opacity {
+    background: rgba(255, 251, 189, 0.55);
+    height: inherit;
+    flex-direction: column;
+    justify-content: center
+}
+
+.home-banner-logo {
+    width: 140px; 
+}
+
+.home-banner-logo:hover {
+    cursor: pointer 
+}
+
+.home-banner-text h1 {
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.home-banner-text p {
+    font-size: 22px;
+}
+
+.get-service {
+    display: inline-block;
+    background: #fffebd;
+    padding: 8px 48px;
+    margin-top: 32px;
+    border-radius: 24px;
+}
+
+
