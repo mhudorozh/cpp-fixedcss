@@ -1,5 +1,5 @@
 /* Убрать потом! */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&subset=cyrillic');
 
@@ -33,6 +33,10 @@ ul {
     display: flex;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .flex-space-between {
     justify-content: space-between;
 }
@@ -45,6 +49,9 @@ ul {
     align-self: center;
 }
 
+.flex-align-center {
+    align-items: center
+}
 /* Навигация */
 
 .general-nav {
@@ -52,20 +59,20 @@ ul {
     top: 0;
     z-index: 2;
     box-sizing: border-box;
-    padding: 32px;
+    padding: 32px 128px;
     width: 100%;
 }
 
 .general-nav-right {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-size: 15px;
 }
 
 .general-nav-right a {
     display: inline-block;
-    color: black;
-    padding: 8px 24px;
+    color: white;
+    padding: 16px;
 }
 
 .general-nav-right a:hover {
@@ -77,23 +84,22 @@ ul {
 
 .home-banner {
     width: 100%;
-    height: 580px;
-    background: url("../img/business.jpg") no-repeat;
+    height: 600px;
+    background: url("../img/background.png") no-repeat;
     background-size: 100% auto;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center
 }
 
 .home-banner-opacity {
-    background: rgba(255, 251, 189, 0.55);
+    background: rgba(0, 0, 0, 0.6); 
     height: inherit;
     flex-direction: column;
     justify-content: center
 }
 
 .home-banner-logo {
-    width: 140px; 
+    width: 35px; 
 }
 
 .home-banner-logo:hover {
@@ -101,21 +107,84 @@ ul {
 }
 
 .home-banner-text h1 {
+    font-family: 'PT Sans Narrow', sans-serif;  
     margin: 0;
     text-transform: uppercase;
     margin-bottom: 24px;
+    color: white
 }
 
 .home-banner-text p {
-    font-size: 22px;
+    font-size: 18px;
+    color: white
 }
 
 .get-service {
+    font-family: 'Open Sans', sans-serif;
     display: inline-block;
     background: #fffebd;
     padding: 8px 48px;
     margin-top: 32px;
     border-radius: 24px;
+    font-size: 18px;
+
 }
 
+.get-service:hover {
+    cursor: pointer;
+    background-color: rgb(212, 177, 59);
+    color: white
+}
 
+.general-nav-right a:nth-child(1) {
+    border-bottom:1px solid #fffebd;
+}
+
+.popular {
+    padding: 0 15%;
+    
+}
+
+.popular h2 {
+    font-family: 'PT Sans Narrow', sans-serif; 
+    font-size: 28px;
+    margin: 0;
+    margin-top: 96px;
+    text-align: center
+}
+
+hr {
+    height: 2px;
+    background-color: #FFC200;
+    width: 140px;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.popular-item {
+    flex: 0 32%;
+    height: 100px;
+    margin-bottom: 2%;
+}
+
+.popular-item:hover {
+    background:transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px; 
+    cursor: pointer;
+}
+
+.popular-item p {
+    width: 80%
+}
+
+.popular-item i {
+    margin-right: 32px;
+    margin-left: 16px;
+    font-size: 40px
+}
+
+.form-support {
+    background: #ebebeb
+}
